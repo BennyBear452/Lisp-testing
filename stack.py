@@ -5,8 +5,7 @@ class Stack2:
   topIndex
   maxLen
   stackRef = []
-  def __init__(Max):
-    self.Max=Max
+  def __init__(self):
     maxLen = 99
     topIndex = -1
     stackRef= [100]
@@ -16,6 +15,7 @@ class Stack2:
     if(topIndex == maxLen):
       print("Error in push-stack is full")
     else:
+      topIndex+=1
       
 
   def pop():
@@ -26,5 +26,8 @@ class Stack2:
 
   def top():
     if(stackRef.isEmpty()):
+      print("Error in top-stack is empty")
+    else:
+      
       
     
