@@ -28,6 +28,9 @@ class Stack2:
     if(stackRef.isEmpty()):
       print("Error in top-stack is empty")
     else:
+      return stackRef.index(topIndex)
       
-      
+  
+  def empty():
+    topIndex == -1
     
