@@ -1,36 +1,37 @@
 
 
-
+#Class definition 
 class Stack2:
-  topIndex
-  maxLen
+
   stackRef = []
   def __init__(self):
-    maxLen = 99
-    topIndex = -1
-    stackRef= [100]
+    self.items = []
+    self.maxLen = 99
+    self.topIndex = -1
+   
     
 
-  def push(number):
-    if(topIndex == maxLen):
+  def push(self, number):
+    if(self.topIndex == maxLen):
       print("Error in push-stack is full")
     else:
-      topIndex+=1
+      self.items.append(number)
+      self.topIndex += 1
       
 
   def pop():
-    if(stackRef.isEmpty()):
+    if(self.empty()):
       print("Error in pop-stack is empty")
     else:
-      topIndex-=1
+      self.topIndex -= 1
 
   def top():
-    if(stackRef.isEmpty()):
+    if(self.isEmpty()):
       print("Error in top-stack is empty")
     else:
-      return stackRef.index(topIndex)
+      return self.items[self.topIndex]
       
   
   def empty():
-    topIndex == -1
+    return (self.topIndex == -1)
     
